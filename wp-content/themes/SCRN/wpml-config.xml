@@ -1,0 +1,25 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">_page_subheader</custom-field>
+        <custom-field action="translate">_page_slogantext</custom-field>
+        <custom-field action="translate">_portfolio_type</custom-field>
+        <custom-field action="translate">_portfolio_description</custom-field>
+        <custom-field action="translate">_portfolio_buttontext</custom-field>
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">portfolio</custom-type>
+    </custom-types>    
+    <admin-texts>
+        <key name="scrn">
+            <key name="scrn_header_firsttext" />
+            <key name="scrn_header_secondtext" />
+            <key name="scrn_header_description" />
+            <key name="scrn_footer_description" />
+            <key name="scrn_footer_address" />
+            <key name="scrn_footer_phone" />
+            <key name="scrn_footer_shortcode" />
+        </key>
+    </admin-texts>    
+</wpml-config>
+
+
