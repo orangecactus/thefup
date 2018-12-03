@@ -30,7 +30,7 @@
             $bg_image = get_template_directory_uri() . '/images/intro-bg.jpg';
         }
         ?>
-        <section id="intro" class="intro-1 parallax-window" style="background-image: url('<?php echo esc_url($bg_image);?>')">
+        <section id="intro" class="intro-1 parallax-window" style="background-color:white;">
         
             <div class="intro-content">
             

@@ -1,6 +1,9 @@
     <footer>
-         <p>&copy; <?php echo date("Y");?> <?php _e('All Rights Reserved', 'SCRN');?>, <?php _e('designed by ', 'SCRN');?> <a title="WordPress Themes" href="http://teothemes.com">TeoThemes</a></p>
+         <p>Designed and developed by <a href="http://www.orangecactus.co.uk" target="_blank" style="color: #e54e53">OrangeCactus</a></p>
     </footer>          
+    
+
+
     
  <?php wp_footer(); ?>
  

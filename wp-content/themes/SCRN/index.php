@@ -108,12 +108,6 @@ get_header(); ?>
         
             <header>
                 <h2><?php _e('Contact', 'SCRN');?></h2>
-                <?php 
-                $description = get_theme_mod('scrn_footer_description', '');
-                if($description != '') {
-                    echo '<p>' . esc_html($description) . '</p>';
-                }
-                ?>
             </header> <!-- end sixteen columns -->
                         
             <div class="row row-centered">
@@ -127,6 +121,7 @@ get_header(); ?>
                 $longitude = get_theme_mod('scrn_footer_longitude', '');
 
                 if($address != '' || $phone != '' || $email != '') { ?>
+                
                     <ul class="contact-info list-unstyled list-inline">
                     
                     <?php if($address != '') { ?>
@@ -141,7 +136,7 @@ get_header(); ?>
                     <?php if($phone != '') { ?>
                         <li>
                             <div class="content">
-                                <i class="fa fa-home"></i>
+                                <i class="fa fa-phone"></i>
                                 <p><?php echo esc_attr($phone);?></p>
                             </div> <!-- /.content -->
                         </li>
@@ -150,7 +145,7 @@ get_header(); ?>
                     <?php if($email != '') { ?>
                         <li>
                             <div class="content">
-                                <i class="fa fa-home"></i>
+                                <i class="fas fa-envelope"></i>
                                 <p><?php echo scrn_encEmail(sanitize_email($email) );?></p>
                             </div> <!-- /.content -->
                         </li>
@@ -194,6 +189,5 @@ get_header(); ?>
 
     </section> <!-- end contact -->
 
-    
-    
+    	
 <?php get_footer();?>
