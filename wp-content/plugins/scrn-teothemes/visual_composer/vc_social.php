@@ -7,6 +7,7 @@ function scrn_social_shortcode( $atts ) {
 	extract( 
 		shortcode_atts( 
 			array(
+				'mainwebsite'					=> '',
 				'facebook'			=> '',
 				'twitter'			=> '',
 				'linkedin'			=> '',
@@ -29,6 +30,9 @@ function scrn_social_shortcode( $atts ) {
 
 	<ul class="social list-unstyled list-inline">
 		<?php 
+		if($mainwebsite != '') {
+			echo '<li><a target="_blank" rel="nofollow" href="' . esc_url($mainwebsite) . '"><i class="fa fa-globe"></i></a></li>';
+		}
 		if($facebook != '') {
 			echo '<li><a target="_blank" rel="nofollow" href="' . esc_url($facebook) . '"><i class="fa fa-facebook"></i></a></li>';
 		}
@@ -85,6 +89,13 @@ function scrn_social_vc() {
 			"base" => "scrn_social_icons",
 			"category" => esc_html__('SCRN WP Theme', 'SCRN'),
 			"params" => array(
+				array(
+					"type" => "textfield",
+					"heading" => esc_html__("Website URL", 'SCRN'),
+					"description" => 'Make sure it starts with http:// or https://',
+					"param_name" => "mainwebsite",
+					"value" => ''
+				),
 				array(
 					"type" => "textfield",
 					"heading" => esc_html__("Facebook URL", 'SCRN'),
