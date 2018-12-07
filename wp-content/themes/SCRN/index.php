@@ -145,7 +145,7 @@ get_header(); ?>
                     <?php if($email != '') { ?>
                         <li>
                             <div class="content">
-                                <i class="fas fa-envelope"></i>
+                                <i class="">@</i>
                                 <p><?php echo scrn_encEmail(sanitize_email($email) );?></p>
                             </div> <!-- /.content -->
                         </li>
